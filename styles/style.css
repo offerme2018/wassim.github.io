@@ -1,0 +1,108 @@
+h1 {
+    color: rgb(255, 89, 0);
+}
+
+
+a {
+    text-decoration: none; 
+}
+
+/* apply to li AND special */
+li, special a {
+  list-style-type: none;
+  ccolor: rgb(37, 199, 28);
+  font-weight: bold;
+}
+
+/* apply to special RLEATED to li */
+/*to remove bullet point from a list item*/
+li.special a {
+    list-style-type: none;
+    ccolor: rgb(37, 199, 28);
+    font-weight: bold;
+  }
+
+  /* select elements based on the presence of a certain attribute on an element.*/
+  a[title] {
+  }
+   
+
+  /* make a selection based on the presence of an attribute with a particular value.*/
+  a[href="https://example.com"]
+  {
+  }
+
+  /*the CSS below styles unvisited links pink and visited links green.*/
+  a:link {
+    color: rgb(200, 255, 192);
+  }
+
+  /* pseudo-classes (e.g., :hover styles certain states of an element */
+  a:hover {
+  }
+
+  /* pseudo-classes (e.g., ::first-line selects the first line of text inside an element */
+  p::first-line {
+  }
+
+  /* selects paragraphs that are direct children of <article> elements using the child combinator (>) */
+  article > p {
+  }
+
+
+ /* 
+  a:visited {
+    color: green;
+  }
+  */
+
+  
+  a:hover {
+    text-decoration: none;
+  }
+
+  /* selects any <span> that is inside a <p>, which is inside an <article>  */
+article p span { }
+
+/* selects any <p> that comes directly after a <ul>, which comes directly after an <h1>  */
+h1 + ul + p { }
+
+/* calc() function; Define the width of this box to be 90% of the containing block width, minus 30 pixels */
+.box {
+  padding: 10px;
+  width: calc(90% - 30px);
+  background-color: rebeccapurple;
+  color: white;
+}
+
+/*
+/* transform() rotate function; rotate a box
+.box {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  transform: rotate(0.8turn);
+}
+*/
+
+/* @import imports a stylesheet into another CSS stylesheet */
+@import 'styles2.css';
+
+/* the stylesheet defines a default pink background for the <body> element. However, a media query follows that defines a blue background if the browser viewport is wider than 30em */
+
+/*
+body {
+  background-color: pink;
+}
+*/
+
+/*
+@media (min-width: 30em) {
+  body {
+    background-color: blue;
+  }
+}
+*/
+
+ 
